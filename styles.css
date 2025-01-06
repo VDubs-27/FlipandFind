@@ -1,9 +1,16 @@
 #container {
-    width: 1200px;
-    background-color: aquamarine;
+    width: 1000px;
+    background-color: #58B09C;
     border-radius: 20px;
+    margin: 55px 0 55px 0;
 }
 
 body {
     justify-items: center;
+    background: #0d1b1e url('./images/background.png');
+    background-size: contain;
+}
+
+#logo {
+    text-align: center;
 }
