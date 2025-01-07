@@ -1,16 +1,71 @@
 #container {
-    width: 1000px;
+    width: 800px;
     background-color: #58B09C;
     border-radius: 20px;
-    margin: 55px 0 55px 0;
+    margin: 20px 0 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 1px;
 }
 
 body {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
     background: #0d1b1e url('./images/background.png');
     background-size: contain;
 }
 
-#logo {
+#start {
     text-align: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+#start img {
+    width: 350px;
+}
+
+#start-button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: linear-gradient(120deg, red, rgb(128, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#game-board {
+    width: 500px;
+    display: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#card {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: 3em;
+    border-radius: 10px;
+}
+
+#card:hover {
+    cursor: pointer;
+    opacity: 70%;
 }
