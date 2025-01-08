@@ -32,7 +32,7 @@ body {
     height: 40px;
     width: 150px;
     border-radius: 10px;
-    background: linear-gradient(120deg, red, rgb(128, 0, 0));
+    background: #C81D25;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 
 #start-button:hover {
     cursor: pointer;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 #game-board {
@@ -51,9 +51,31 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    perspective: 1000px;
 }
 
-#card {
+#card.unflipped {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    font-size: 3em;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+    color: transparent;
+}
+
+#card:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#card.flipped {
     width: 75px;
     height: 75px;
     display: flex;
@@ -63,9 +85,62 @@ body {
     background: #fff;
     font-size: 3em;
     border-radius: 10px;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
 }
 
-#card:hover {
+#card.flipped:hover {
+    opacity: 100%;
+}
+
+#card.completed {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 255, 0, 0.673);
+    font-size: 3em;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+#card.completed:hover {
+    opacity: 100%;
+}
+
+#completion {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#end-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-again {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: #C81D25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-again:hover {
     cursor: pointer;
-    opacity: 70%;
+    opacity: 80%;
 }
