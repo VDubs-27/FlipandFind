@@ -113,6 +113,15 @@ body {
     opacity: 100%;
 }
 
+#card #front, #card #back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+#card #back {
+    -webkit-transform: rotateY(180deg);
+}
+
 #completion {
     display: none;
     top: 0;
