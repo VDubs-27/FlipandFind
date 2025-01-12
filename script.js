@@ -124,6 +124,7 @@ playAgain.addEventListener("click", () => {
     resetGame.style.display = "flex";
     completed = 0;
     moves = 0;
+    movesMade.style.display = "flex";
     movesMade.innerHTML = `Moves: ${moves}`;
     play(cards);
 });
