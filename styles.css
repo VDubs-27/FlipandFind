@@ -144,3 +144,37 @@ body {
     cursor: pointer;
     opacity: 80%;
 }
+
+#in-game {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset-game {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: #C81D25;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+}
+
+#reset-game:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#moves {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+}
